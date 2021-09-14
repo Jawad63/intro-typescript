@@ -1,7 +1,7 @@
 (function() {
-    document.getElementById('guess-form').addEventListener("submit", compareUserGuess);
+    document.getElementById('guess-form') ! .addEventListener("submit", compareUserGuess);
 
-    function compareUserGuess (event) {
+    function compareUserGuess (event: any) {
         event.preventDefault();
 
         const secretNumber = generateSecretNumber();
@@ -20,9 +20,9 @@
         return secretNumber;
     }
 
-    function getRandomArbitrary(min, max) {
+    function getRandomArbitrary(min: number, max: number) {
         return Math.round(Math.random() * (max - min) + min);
     }
 })();
 
-console.log("hellooooo");
+console.log("hellooooo")
